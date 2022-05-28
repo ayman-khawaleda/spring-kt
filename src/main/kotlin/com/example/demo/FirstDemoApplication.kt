@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 class FirstDemoApplication{
 	@GetMapping("/hello")
 	fun hello(@RequestParam(value="Name", defaultValue="World")Name:String):String{
-		return "Hello, %s".format(Name) + 2
+		return "Hello, %s".format(Name)
 	}
 }
 
