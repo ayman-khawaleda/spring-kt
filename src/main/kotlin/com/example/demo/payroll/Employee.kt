@@ -5,4 +5,4 @@ import javax.persistence.Id
 import javax.persistence.Entity
 
 @Entity
-data class Employee(@Id @GeneratedValue val id:Long,val name:String,val role:String)
+data class Employee(@Id @GeneratedValue var id:Long, var name:String, var role:String)
